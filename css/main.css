@@ -1,0 +1,48 @@
+/* poniendo una fuente a todo el body*/
+body{
+  font-family: sans-serif;
+  padding: 10px;
+  }
+/*ampliando el margen del header*/
+header h1 {
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+header hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*aplicando estilo a la biografia*/
+  .biography {
+  width: 82%;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.summary {
+  display: inline-block;
+  vertical-align: top;
+  width: 17%;
+}
+/*dando estilo a la tabla*/
+.summary-table{
+  border: 1px solid gray;
+  background color: #f8f9fa;
+  padding: 1px;
+  font-size: 13px;
+}
+/*dando color y estilo al y titulo de la tabla*/
+.summary-table thead{
+  background-color: #B0C4DE;
+  padding-top: 3px;
+  padding-top: 3px;
+  font-size: 16px;
+}
+/*alineando la frase debajo de la imagen de la tabla*/
+.summary-table tbody tr:first-child {
+  text-align: center;
+}
+/*alineando la primera columna de la tabla*/
+.summary-tablet tbody th {
+  text-align: left;
+}
