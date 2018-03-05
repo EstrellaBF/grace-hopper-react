@@ -3,14 +3,27 @@
 
 <head>
   <meta charset="utf-8">
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
   <!--Babel para jsx-->
-  <script crossorigin src = "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script src="./vendors/react.js"></script>
+  <script src="./vendors/react-dom.js"></script>
+  <!-- <script src="./vendors/browser.min.js"></script> -->
   <title>Grace Hopper</title>
 </head>
 
 <body>
+
+  <header>
+  </header>
+  <hr/>
+
+  <main class="biography" id="biography">
+
+  </main>
+  <aside class="summary" id="summary"></aside>
+
   <!-- 
 <header>
   <h1>Grace Hopper</h1>
@@ -97,6 +110,7 @@
       </tbody>
     </table>
   </aside> -->
+  <script type="text/babel" src="./js/app.js"></script>
 </body>
 
 </html>
