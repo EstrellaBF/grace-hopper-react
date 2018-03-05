@@ -1,10 +1,14 @@
 // Se encapsulan en funciones autoejecutables para que no afecten entre sí
+
+
+const headerStyle = {textTransform : 'capitalize', fontFamily:"'Karma', 'serif'"};
+
 (()=> {
 // Se creará por temas de practica, el header por React
 class Header extends React.Component {
   render() {
     return (
-      <h1>grace-hopper</h1>
+      <h1 style={headerStyle}>grace-hopper</h1>
     );
   }
 }
@@ -16,7 +20,7 @@ ReactDOM.render(<Header />, document.querySelector('header'));
   class Phrase extends React.Component {
     render() {
       return (
-        <div>
+        <div style={headerStyle}>
           <h2>Phrase</h2>
           <blockquote cite="http://http://www.azquotes.com/quote/553883">Humans are allergic to change. They love to say, 'We've always done it this way.' I try to fight that. That's why I have
             a clock on my wall that runs counter-clockwise.
@@ -30,7 +34,7 @@ ReactDOM.render(<Header />, document.querySelector('header'));
   class Career extends React.Component {
     render() {
       return (
-        <div>
+        <div style={headerStyle}>
         <h3>Career</h3>
         <ol>
           <li>World War</li>
@@ -46,7 +50,7 @@ ReactDOM.render(<Header />, document.querySelector('header'));
   class Biography extends React.Component {
     render() {
       return (
-        <div>
+        <div style={headerStyle}>
         <p><strong>Grace Brewster Murray Hopper</strong> (née <strong>Murray</strong>; December 9, 1906 – January 1, 1992) was an American <a href="https://en.wikipedia.org/wiki/Computer_scientist" target="_blank">computer scientist</a> and United States Navy rear admiral.[1]
         <mark>One of the first programmers of the Harvard Mark I computer</mark>, she was a pioneer of computer programming who invented one of the first compiler related tools. She popularized the idea of machine-independent programming languages, which
         led to the development of <a href="https://en.wikipedia.org/wiki/COBOL">COBOL</a>, an early <a href="https://en.wikipedia.org/wiki/High-level_programming_language">high-level programming language</a> still in use today.
@@ -85,8 +89,9 @@ ReactDOM.render(<Header />, document.querySelector('header'));
 (()=>{
   class Table extends React.Component {
     render() {
+      const alignCenter = {display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily:"'Karma', 'serif'"};
       return (
-        <table className="summary-table">
+        <table style={alignCenter} className="summary-table">
           <thead>
             <tr>
               <th colSpan="2">Grace Murray Hopper</th>
@@ -100,20 +105,20 @@ ReactDOM.render(<Header />, document.querySelector('header'));
                 <tr>
                   <th>Nickname</th>
                   <td>"Amazing Grace"</td>
-                  <tr>
-                    <th>Born</th>
-                    <td>December 9, 1906</td>
-                    <tr>
-                      <th>Died</th>
-                      <td>January 1, 1992 (aged 85)</td>
-                      <tr>
-                        <th>Allegiance</th>
-                        <td>
-                          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png" alt="USA"/> United States of America
-                        </td>
-                      </tr>
-                    </tr>
-                  </tr>
+                </tr>
+                <tr>
+                  <th>Born</th>
+                  <td>December 9, 1906</td>
+                </tr>
+                <tr>
+                  <th>Died</th>
+                  <td>January 1, 1992 (aged 85)</td>
+                </tr>
+                <tr>
+                  <th>Allegiance</th>
+                  <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png" alt="USA"/> United States of America
+                  </td>
                 </tr>
               </td>
             </tr>
